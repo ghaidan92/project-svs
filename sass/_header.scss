@@ -2,7 +2,7 @@
     background-color: $color-grey-dark-1;
     grid-column: full-start / full-end; //col-end 6
 
-    background-image: linear-gradient(rgba($color-secondary, .80), rgba($color-secondary, .80)), url('../img/header-pic.jpg');
+    background-image: linear-gradient(rgba($color-secondary, .25), rgba($color-secondary, .25)), url('../img/header-trial2.jpg');
     background-size: cover;
     background-position: center;
     padding: 8rem;
@@ -13,6 +13,10 @@
     grid-template-columns: max-content;
     grid-row-gap: 1.5rem;
     justify-content: center;
+
+    &__text {
+        margin-top: 20rem;
+    }
 
     &__logo {
         width: 40rem;

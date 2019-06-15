@@ -26,7 +26,7 @@ body {
 
 .heading-1 {
   font-size: 4.5rem;
-  color: #10350c;
+  color: #025332;
   line-height: 1; }
 
 .heading-2 {
@@ -40,7 +40,7 @@ body {
 
 .heading-3 {
   font-size: 1.6rem;
-  color: #10350c;
+  color: #025332;
   text-transform: uppercase; }
 
 .heading-4 {
@@ -51,7 +51,7 @@ body {
     color: #54483A; }
 
 .btn {
-  background-color: #10350c;
+  background-color: #025332;
   color: #fff;
   border: none;
   border-radius: 0;
@@ -77,14 +77,14 @@ body {
   margin-bottom: 8rem; }
 
 .sidebar {
-  background-color: #10350c;
+  background-color: #025332;
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1; }
 
 .header {
   background-color: #54483A;
   grid-column: full-start / full-end;
-  background-image: linear-gradient(rgba(16, 29, 44, 0.8), rgba(16, 29, 44, 0.8)), url("../img/header-pic.jpg");
+  background-image: linear-gradient(rgba(16, 29, 44, 0.25), rgba(16, 29, 44, 0.25)), url("../img/header-trial2.jpg");
   background-size: cover;
   background-position: center;
   padding: 8rem;
@@ -94,6 +94,8 @@ body {
   grid-template-columns: max-content;
   grid-row-gap: 1.5rem;
   justify-content: center; }
+  .header__text {
+    margin-top: 20rem; }
   .header__logo {
     width: 40rem;
     height: 10rem;
@@ -122,7 +124,7 @@ body {
   grid-row-gap: 1.5rem;
   grid-column-gap: 2.5rem; }
   .mission__icon {
-    fill: #10350c;
+    fill: #025332;
     width: 4.5rem;
     height: 4.5rem;
     grid-row: 1 / span 2;
@@ -131,9 +133,9 @@ body {
     font-size: 1.7rem; }
 
 .story__pictures {
-  background-color: #10350c;
+  background-color: #025332;
   grid-column: full-start / col-end 4;
-  background-image: linear-gradient(rgba(16, 53, 12, 0.5), rgba(16, 53, 12, 0.5)), url("../img/back.jpg");
+  background-image: linear-gradient(rgba(2, 83, 50, 0.5), rgba(2, 83, 50, 0.5)), url("../img/back.jpg");
   display: grid;
   grid-template-rows: repeat(6, 1fr);
   grid-template-columns: repeat(6, 1fr);
@@ -147,6 +149,7 @@ body {
 
 .story__img--2 {
   width: 110%;
+  height: 110%;
   grid-area: 4 / 4 / 6 / 7;
   z-index: 20;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2); }
@@ -191,7 +194,7 @@ body {
   .service__like {
     grid-area: 1 / 2 / 2 / 3;
     z-index: 2;
-    fill: #10350c;
+    fill: #025332;
     height: 2.5rem;
     width: 2.5rem;
     justify-self: end;
@@ -215,13 +218,15 @@ body {
     margin-top: 2.5rem; }
   .service__location, .service__rooms, .service__area, .service__price {
     font-size: 1.5rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
     display: flex;
     align-items: center; }
     .service__location svg, .service__rooms svg, .service__area svg, .service__price svg {
-      fill: #10350c;
+      fill: #025332;
       height: 2rem;
       width: 2rem;
+      margin-right: 1rem; }
+    .service__location span, .service__rooms span, .service__area span, .service__price span {
       margin-right: 1rem; }
   .service__btn {
     grid-column: 1 / -1; }
@@ -231,19 +236,20 @@ body {
   grid-column: full-start / full-end; }
 
 .footer {
-  background-color: #101d2c;
+  background-color: lightgray;
   grid-column: full-start / full-end;
-  padding: 8rem; }
+  padding: 1rem; }
 
 .nav {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-gap: 2rem;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 1rem; }
   .nav__link:link, .nav__link:visited {
     font-size: 1.4rem;
-    color: #fff;
+    color: #3d3c3c;
     text-decoration: none;
     font-family: "Josefin Sans", sans-serif;
     text-transform: uppercase;
@@ -257,12 +263,18 @@ body {
 
 .copyright {
   font-size: 1.4rem;
-  color: #aaa;
-  margin-top: 6rem;
+  color: #6D5D4B;
+  margin-top: 2rem;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
   width: 70%; }
+
+.sponsers {
+  display: flex;
+  width: 25rem;
+  margin-right: auto;
+  margin-left: auto; }
 
 .navigation__checkbox {
   display: none; }
@@ -285,7 +297,7 @@ body {
   position: fixed;
   top: 2.5rem;
   left: 1rem;
-  background-image: radial-gradient(#10350c, #10350c);
+  background-image: radial-gradient(#025332, #025332);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
 
@@ -329,7 +341,7 @@ body {
 
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
-  color: #10350c;
+  color: #025332;
   transform: translateX(1rem); }
 
 .navigation__checkbox:checked ~ .navigation__background {
