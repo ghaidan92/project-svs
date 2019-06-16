@@ -20,6 +20,11 @@ body {
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
+.container-about {
+  display: grid;
+  grid-template-rows: 80vh repeat(3, min-content);
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+
 .heading-1, .heading-2, .heading-3, .heading-4 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400; }
@@ -79,7 +84,7 @@ body {
 .sidebar {
   background-color: #025332;
   grid-column: sidebar-start / sidebar-end;
-  grid-row: 1 / -1; }
+  grid-row: 1 / 5; }
 
 .header {
   background-color: #54483A;
@@ -95,7 +100,7 @@ body {
   grid-row-gap: 1.5rem;
   justify-content: center; }
   .header__text {
-    margin-top: 20rem; }
+    margin-top: 11rem; }
   .header__logo {
     width: 40rem;
     height: 10rem;
@@ -237,19 +242,17 @@ body {
 
 .footer {
   background-color: lightgray;
-  grid-column: full-start / full-end;
+  grid-column: sidebar-start / full-end;
   padding: 1rem; }
 
 .nav {
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  grid-gap: 2rem;
-  align-items: center;
-  margin-bottom: 1rem; }
+  display: flex;
+  align-self: center;
+  text-align: left; }
   .nav__link:link, .nav__link:visited {
     font-size: 1.4rem;
-    color: #3d3c3c;
+    color: #000;
     text-decoration: none;
     font-family: "Josefin Sans", sans-serif;
     text-transform: uppercase;
@@ -263,7 +266,8 @@ body {
 
 .copyright {
   font-size: 1.4rem;
-  color: #6D5D4B;
+  color: #025332;
+  margin-bottom: 2rem;
   margin-top: 2rem;
   margin-right: auto;
   margin-left: auto;
@@ -272,9 +276,14 @@ body {
 
 .sponsers {
   display: flex;
-  width: 25rem;
+  width: 20rem;
   margin-right: auto;
   margin-left: auto; }
+
+.sponsers-about {
+  display: flex;
+  width: 1rem !important;
+  margin-right: auto; }
 
 .navigation__checkbox {
   display: none; }
@@ -299,7 +308,8 @@ body {
   left: 1rem;
   background-image: radial-gradient(#025332, #025332);
   z-index: 1000;
-  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  opacity: .9; }
 
 .navigation__nav {
   height: 100vh;

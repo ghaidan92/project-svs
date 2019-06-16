@@ -1,22 +1,28 @@
 .footer {
     background-color: lightgray;
-    grid-column: full-start / full-end;
+    grid-column: sidebar-start / full-end;
     padding: 1rem;
 }
+
+// .footer2 {
+//     background-color: $color-primary;
+//     grid-column: col-end 4 / full-end;
+//     padding: 1rem;
+// }
 
 .nav {
     list-style: none;
 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    grid-gap: 2rem;
-    align-items: center;
-    margin-bottom: 1rem;
+    display: flex;
+    // grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    // grid-gap: 1rem;
+    align-self: center;
+    text-align: left;
 
     &__link:link,
     &__link:visited {
         font-size: 1.4rem;
-        color: rgb(61, 60, 60);
+        color: #000;
         text-decoration: none;
         font-family: $font-display;
         text-transform: uppercase;
@@ -35,7 +41,8 @@
 
 .copyright {
     font-size: 1.4rem;
-    color: $color-grey-dark-2;
+    color: $color-primary;
+    margin-bottom: 2rem;
     margin-top: 2rem;
     margin-right: auto;
     margin-left: auto;
@@ -46,7 +53,18 @@
 .sponsers {
     // margin-left: 3rem;
     display: flex;
-    width: 25rem;
+    width: 20rem;
     margin-right: auto;
     margin-left: auto;
+    // margin-top: 1rem;
+}
+
+.sponsers-about {
+    // margin-left: 3rem;
+    display: flex;
+    width: 1rem !important;
+    // align-self: center;
+    margin-right: auto;
+    // margin-left: auto;
+    // margin-top: 1rem;
 }
