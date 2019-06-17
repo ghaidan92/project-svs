@@ -11,6 +11,11 @@
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
     <title>nexter &mdash; your home, your freedom</title>
+    <script>
+            function closeNav() {
+              document.getElementById("navi-toggle").checked = false;
+            }
+    </script>
 </head>
 
 <body class="container">
@@ -28,12 +33,12 @@
                 <ul class="navigation__list">
                     <li class="navigation__item"><a href="#" class="navigation__link"><span>*</span>Work in Progress</a>
                     </li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>Home</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>About</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Testimonials</a>
+                    <li class="navigation__item"><a href="#" class="navigation__link" onclick="closeNav()"><span>01</span>Home</a></li>
+                    <li class="navigation__item"><a href="about.html" target="_blank" onclick="closeNav()" class="navigation__link"><span>02</span>About</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link" onclick="closeNav()"><span>03</span>Testimonials</a>
                     </li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Services</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Contact Us</a>
+                    <li class="navigation__item"><a href="#services" class="navigation__link" onclick="closeNav()"><span>04</span>Services</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link" onclick="closeNav()"><span>05</span>Contact Us</a>
                     </li>
                 </ul>
             </nav>
@@ -150,7 +155,7 @@
         <button class="btn">Read more</button>
     </div>
 
-    <section class="services">
+    <section class="services" id="services">
         <div class="service">
             <img src="img/centpic-4.jpg" alt="Service-1" class="service__img">
             <svg class="service__like">
@@ -392,14 +397,6 @@
             <p class="copyright">
                     &copy; Copyright 2019 by Centurion Janitorial Services. Built by Ghaidan Alhubaishi.
                 </p>
-    </footer>
-    <footer class="footer2">
-        
-            <!-- <div class="sponsers">
-                    <img src="https://static.thumbtack.com/media/pages/profile/standard-widgets/pro-svg/orange/2015.svg" alt="">
-                    <img src="./img/The-Green-Business-Certified-Program-Logo.png">
-                </div> -->
-                
     </footer>
 </body>
 

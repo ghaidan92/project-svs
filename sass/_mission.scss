@@ -28,4 +28,11 @@
     &__text {
         font-size: 1.7rem;
     }
+
+    &__text-2 {
+        font-size: 1.7rem;
+        grid-area: 3 / 2 / 4 / 3;
+        margin-left: 10rem;
+        margin-top: 2rem;
+    }
 }
