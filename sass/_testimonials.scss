@@ -15,9 +15,9 @@
 
 .feature {
 
-    float: left;
-    width: 33.3333%;
-    margin-bottom: 6rem;
+    // float: left;
+    // width: 33.3333%;
+    // margin-bottom: 6rem;
 
     @supports(display: grid) {
         width: auto;
@@ -38,6 +38,10 @@
     }
 
     &__text {
-        font-size: 1.7rem;
+        font-size: 1.7rem; 
+    }
+
+    &__margin-2 {
+        margin-top: -50rem;
     }
 }

@@ -12,9 +12,9 @@
 
     <title>nexter &mdash; your home, your freedom</title>
     <script>
-            function closeNav() {
-              document.getElementById("navi-toggle").checked = false;
-            }
+        function closeNav() {
+            document.getElementById("navi-toggle").checked = false;
+        }
     </script>
 </head>
 
@@ -31,14 +31,19 @@
 
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>*</span>Work in Progress</a>
+                    <li class="navigation__item"><a href="#" class="navigation__link"
+                            onclick="closeNav()"><span>01</span>Home</a></li>
+                    <li class="navigation__item"><a href="about.html" target="_blank" onclick="closeNav()"
+                            class="navigation__link"><span>02</span>About</a></li>
+                    <li class="navigation__item"><a href="./testimonials.html" class="navigation__link"
+                            onclick="closeNav()"><span>03</span>Testimonials</a>
                     </li>
-                    <li class="navigation__item"><a href="#" class="navigation__link" onclick="closeNav()"><span>01</span>Home</a></li>
-                    <li class="navigation__item"><a href="about.html" target="_blank" onclick="closeNav()" class="navigation__link"><span>02</span>About</a></li>
-                    <li class="navigation__item"><a href="./testimonials.html" class="navigation__link" onclick="closeNav()"><span>03</span>Testimonials</a>
+                    <li class="navigation__item"><a href="#services" class="navigation__link"
+                            onclick="closeNav()"><span>04</span>Services</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"
+                            onclick="closeNav()"><span>05</span>Contact Us</a>
                     </li>
-                    <li class="navigation__item"><a href="#services" class="navigation__link" onclick="closeNav()"><span>04</span>Services</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link" onclick="closeNav()"><span>05</span>Contact Us</a>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>06</span>Green Solutions</a>
                     </li>
                 </ul>
             </nav>
@@ -47,7 +52,7 @@
 
     <header class="header">
         <!-- <img src="img/centurionsvs.jpg" alt="Centurion logo" class="header__logo"> -->
-        
+
         <h1 class="heading-1 header__text">Centurion Janitorial Sercies</h1>
         <!-- <h3 class="heading-3">&nbsp;</h3>
         <h3 class="heading-3">&nbsp;</h3> -->
@@ -141,8 +146,14 @@
     </section>
 
     <div class="story__pictures">
-        <img src="img/centpic-3.png" alt="" class="story__img--1">
-        <img src="img/greencleaning.jpg" alt="credit to: Blue River Cleaning" class="story__img--2">
+        <div id="map"></div>
+        <div class="location">
+            <h5>San Francisco, Bay Area</h5>
+            <h5>66 San Pedro Rd. Suite C
+                DALY CITY, CA 94014</h5>
+            <h6>Phone number: (000) 000-0000</h6>
+            <h6>Office Hours: Mon - Fri 9am to 5pm</h6>
+        </div>
     </div>
 
     <div class="story__content">
@@ -390,13 +401,20 @@
             <li class="nav__item"><a href="#" class="nav__link">come work with us</a></li>
         </ul> -->
         <div class="sponsers">
-                <img src="https://static.thumbtack.com/media/pages/profile/standard-widgets/pro-svg/orange/2015.svg" alt="">
-                <img src="./img/The-Green-Business-Certified-Program-Logo.png">
-            </div>
-            <p class="copyright">
-                    &copy; Copyright 2019 by Centurion Janitorial Services. Built by Ghaidan Alhubaishi.
-                </p>
+            <img src="https://static.thumbtack.com/media/pages/profile/standard-widgets/pro-svg/orange/2015.svg" alt="">
+            <img src="./img/The-Green-Business-Certified-Program-Logo.png">
+        </div>
+        <p class="copyright">
+            &copy; Copyright 2019 by Centurion Janitorial Services. Built by Ghaidan Alhubaishi.
+        </p>
     </footer>
 </body>
+<script src="app.js"></script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYZoIdyK2cXX-8qHATbOW7TL4J-GPXGU8&callback=initMap">
+    </script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
 
 </html>

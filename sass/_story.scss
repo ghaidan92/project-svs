@@ -1,9 +1,9 @@
 .story {
 
     &__pictures {
-        background-color: $color-primary;
+        // background-color: $color-primary;
         grid-column: full-start / col-end 4;
-        background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url('../img/back.jpg');
+        // background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url('../img/back.jpg');
         //overlay
 
         display: grid;
@@ -50,5 +50,29 @@
         font-size: 1.5rem;
         font-style: italic;
         margin-bottom: 4rem;
+    }
+}
+
+#map {
+    width: 59.3rem;
+    height: 35rem;
+}
+
+.location {
+    margin-left: 4rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    grid-row: 2 / 3 ;
+    background-color: $color-primary;
+    color: azure;
+    padding: 2rem;
+    -webkit-background-clip: text;
+    display: inline-block;
+    color: transparent;
+    transition: all .2s;
+
+    &:hover {
+        transform: translateY(-1.5rem);
+        text-shadow: .5rem 1rem 2rem rgba(#000, .2);
     }
 }
