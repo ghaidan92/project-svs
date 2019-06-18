@@ -34,14 +34,14 @@
                 <ul class="navigation__list">
                     <li class="navigation__item"><a href="./index.html" class="navigation__link"
                             onclick="closeNav()"><span>01</span>Home</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"
+                    <li class="navigation__item"><a href="./about.html" class="navigation__link"
                             onclick="closeNav()"><span>02</span>About</a></li>
                     <li class="navigation__item"><a href="./testimonials.html" class="navigation__link"
                             onclick="closeNav()"><span>03</span>Testimonials</a>
                     </li>
                     <li class="navigation__item"><a href="./index.html/services" class="navigation__link"
                             onclick="closeNav()"><span>04</span>Services</a></li>
-                    <li class="navigation__item"><a href="./contact.html" class="navigation__link"
+                    <li class="navigation__item"><a href="#" class="navigation__link"
                             onclick="closeNav()"><span>05</span>Contact Us</a>
                     </li>
                     <li class="navigation__item"><a href="#" class="navigation__link"><span>06</span>Green Solutions</a>
@@ -57,37 +57,45 @@
         <h1 class="heading-1 header__text">Centurion Janitorial Sercies</h1>
     </header>
 
-    <section class="missions">
-        <div class="mission">
-            <svg class="mission__icon">
-                <!-- <use xlink:href="img/sprite.svg#icon-global"></use> -->
-            </svg>
-            <h4 class="heading-4 heading-4--dark">Centurion Janitorial Services: Your Cleaning Solution</h4>
-            <p class="mission__text">Centurion Services was founded in 2006 in San Francisco, California. Currently
-                based in the Peninsula, Centurion serves a variety of clients throughout the Bay
-                Area. The clients we serve include commercial buildings such as hospitals,
-                clinics, schools, office buildings, fitness centers, manufacturing facilities
-                among others. Distinguished by a willingness to provide a highly personalized
-                service and basic hard work, Centurion provides its clients with individualized
-                and customized services to meet any maintenance, janitorial and handyman
-                service. Consistent communication with Centurion’s clientele ensures that our
-                technicians are always conforming to the client’s needs and high standards.
-
-                Certifications:
-
-                Centurion Services follows all of OSHA cleaning
-                standards and provides our janitorial crew members with strong training in
-                safety.
-            </p>
-
-            <ul class="mission__text-2">
-                <li>EPA Renovator Certification</li>
-                <li>Environmental Consulting and Training</li>
-                <li>Green Business Bureau Certified</li>
-            </ul>
+    <div class="contact__map">
+        <div id="map"></div>
+        <div class="location">
+            <h5>San Francisco, Bay Area</h5>
+            <h5>66 San Pedro Rd. Suite C
+                DALY CITY, CA 94014</h5>
+            <h6>Phone number: (000) 000-0000</h6>
+            <h6>Office Hours: Mon - Fri 9am to 5pm</h6>
         </div>
-        
-    </section>
+    </div>
+
+    <div class="form__content">
+        <form action="#" class="form">
+            <h3 class="heading-3 mb-sm">Contact Us!</h3>
+            <!-- <h2 class="heading-2 heading-4--dark mb-md">&ldquo;Best hire I've ever made&rdquo;</h2>
+        <p class="story__text">
+            Raul and his crew continue to exceed expectations for quality workmanship and attention to detail.
+        </p>
+        <button class="btn">Read more</button> -->
+            <div class="form__group">
+                <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                <label for="name" class="form__label">Full Name</label>
+            </div>
+
+            <div class="form__group">
+                <input type="email" class="form__input" placeholder="Email Address" id="email" required>
+                <label for="email" class="form__label">Email Address</label>
+            </div>
+
+            <div class="form__group">
+                <textarea rows="4" type="text" class="form__input" placeholder="Message" id="message"
+                    required></textarea>
+                <label for="message" class="form__label">Message</label>
+            </div>
+            <div class="form__group">
+                <a href="#" class="btn">Send &rarr;</a>
+            </div>
+    </div>
+    </form>
 
     <footer class="footer">
         <div class="sponsers-about">
@@ -99,6 +107,15 @@
             &copy; Copyright 2019 by Centurion Janitorial Services. Built by Ghaidan Alhubaishi.
         </p>
     </footer>
+
+
 </body>
+<script src="app.js"></script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYZoIdyK2cXX-8qHATbOW7TL4J-GPXGU8&callback=initMap">
+    </script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
 
 </html>
