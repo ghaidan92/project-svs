@@ -281,9 +281,16 @@ body {
 
 .sponsers {
   display: flex;
-  width: 20rem;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  margin-top: 1rem;
+  margin-left: 45rem; }
+  .sponsers__img1 {
+    width: 15rem;
+    height: 10rem; }
+  .sponsers__img2 {
+    width: 15rem;
+    height: 10rem; }
 
 .sponsers-about {
   display: flex;

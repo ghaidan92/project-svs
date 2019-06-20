@@ -47,10 +47,23 @@
 .sponsers {
     // margin-left: 3rem;
     display: flex;
-    width: 20rem;
+    // width: 20rem;
     margin-right: auto;
     margin-left: auto;
-    // margin-top: 1rem;
+    margin-top: 1rem;
+    margin-left: 45rem;
+
+    &__img1 {
+        width: 15rem;
+        height: 10rem;
+        
+
+    }
+
+    &__img2 {
+        width: 15rem;
+        height: 10rem;
+    }
 }
 
 .sponsers-about {
