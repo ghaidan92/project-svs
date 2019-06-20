@@ -249,6 +249,8 @@ body {
   background-color: lightgray;
   grid-column: sidebar-start / full-end;
   padding: 1rem; }
+  .footer__text {
+    text-align: center; }
 
 .nav {
   list-style: none;
@@ -283,7 +285,7 @@ body {
   display: flex;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-left: 45rem; }
   .sponsers__img1 {
     width: 15rem;

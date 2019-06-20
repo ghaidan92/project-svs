@@ -2,6 +2,10 @@
     background-color: lightgray;
     grid-column: sidebar-start / full-end;
     padding: 1rem;
+
+    &__text {
+        text-align: center;
+    }
 }
 
 .nav {
@@ -50,7 +54,7 @@
     // width: 20rem;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-left: 45rem;
 
     &__img1 {
@@ -64,6 +68,8 @@
         width: 15rem;
         height: 10rem;
     }
+
+    
 }
 
 .sponsers-about {
